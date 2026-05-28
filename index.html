@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+    <title>聖地巡礼！！</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Dela+Gothic+One&family=Noto+Serif+JP:wght@200..900&family=Pathway+Gothic+One&family=Space+Grotesk:wght@300..700&family=Stick&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        function init() {
+        var map = L.map('map').setView([34.87808286353355, 135.57665264168062], 10);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 22,
+            maxNativeZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker(
+            [34.87808286353355, 135.57665264168062],
+        ).addTo(map);
+
+        marker.bindPopup("<b>Versearは恋をしない。</b><br>第3話 戦闘シーン").openPopup();
+
+        /*
+        var popup = L.popup()
+            .setLatLng([34.87808286353355, 135.57665264168100],)
+            .setContent("「Versearは恋をしない。」第3話 戦闘シーン")
+            .openOn(map);
+        */
+    
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1><div class="clip">聖地巡礼まっぷ！！</div></h1>
+    <div class="container">
+        <div id="map" style="width:95%;height:500px"></div>
+    </div>
+    <div class="sentence">
+        <h3>私たちの推しが見たその景色を, その目で.</h3>
+    </div>
+    
+</body>
+</html>
