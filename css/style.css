@@ -77,10 +77,10 @@ h3 {
 
 
 
-.rulues{
-   display: flex;
+.rules{
+   display: flex; 
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
 }
-
+  
 
