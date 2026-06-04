@@ -1,1 +1,6 @@
-windows.alert('おはようございます');
+
+
+function showAlert(){
+    alert('おはようございます');
+
+}
