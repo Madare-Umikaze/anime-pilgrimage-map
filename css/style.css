@@ -4,6 +4,19 @@ h1 {
     text-align: center;
 }
 
+
+
+h2{ font-family: "Zen Kaku Gothic Antique";
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
 h3 {
     font-family: "Zen Kaku Gothic Antique";
     font-size: 30px;
@@ -58,3 +71,15 @@ h3 {
   background-size: cover;
   background-position: center;/*画像の位置を決める*/
 }
+
+
+
+
+
+
+.rules{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+  
