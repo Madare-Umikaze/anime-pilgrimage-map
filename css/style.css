@@ -78,7 +78,7 @@ h3 {
 
 
 .rules{
-   display: flex; 
+   display: flex ; 
    flex-wrap: wrap;
    justify-content: space-between;
 }
